@@ -358,7 +358,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GeoTrackingExampleN466ERUP4U1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.commonmoon.ar-test";
 				PRODUCT_NAME = GeoTrackingExample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -383,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GeoTrackingExampleN466ERUP4U1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.commonmoon.ar-test";
 				PRODUCT_NAME = GeoTrackingExample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

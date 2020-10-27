@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Geo 1</string>
+	<string>Geo 3</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
