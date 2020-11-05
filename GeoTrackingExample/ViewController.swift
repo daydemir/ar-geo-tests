@@ -134,7 +134,7 @@ class ViewController: UIViewController, ARSessionDelegate, CLLocationManagerDele
     
     // Presents the available actions when the user presses the menu button.
     func presentAdditionalActions() {
-        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
         actionSheet.addAction(UIAlertAction(title: "Reset Session", style: .destructive, handler: { (_) in
             self.restartSession()
         }))
@@ -161,6 +161,19 @@ class ViewController: UIViewController, ARSessionDelegate, CLLocationManagerDele
 
     func restartSession() {
         // Check geo-tracking location-based availability.
+        
+        let raleigh = CLLocationCoordinate2DMake(35.7782988, -78.6391812) //false
+        let durham = CLLocationCoordinate2DMake(35.9965197, -78.9017014) //false
+        let timesSquare = CLLocationCoordinate2DMake(40.7579990, -73.9855530) //true
+        let archivesOfUS = CLLocationCoordinate2D(latitude: 38.892337, longitude: -77.022931) //true
+        let whiteHouse = CLLocationCoordinate2DMake(38.8975176, -77.0365760) //false
+        ARGeoTrackingConfiguration.checkAvailability(at: whiteHouse) { available, error in
+            
+            print("manual test")
+            print(available)
+            print(error)
+        }
+
         ARGeoTrackingConfiguration.checkAvailability { (available, error) in
             if !available {
                 let errorDescription = error?.localizedDescription ?? ""
@@ -190,7 +203,17 @@ class ViewController: UIViewController, ARSessionDelegate, CLLocationManagerDele
         
         showToast("Running new AR session")
         
-        addGeoAnchor(at: CLLocationCoordinate2D(latitude: 40.745820, longitude: -74.005540))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+            self.addGeoAnchor(at: CLLocationCoordinate2D(latitude: 38.892337, longitude: -77.022931))
+//            self.addGeoAnchor(at: CLLocationCoordinate2D(latitude: 38.891409, longitude: -77.022900))
+//            self.addGeoAnchor(at: CLLocationCoordinate2D(latitude: 38.891409, longitude: -77.022800))
+//            self.addGeoAnchor(at: CLLocationCoordinate2D(latitude: 38.891409, longitude: -77.022400))
+//            self.addGeoAnchor(at: CLLocationCoordinate2D(latitude: 38.891409, longitude: -77.022000))
+//            self.addGeoAnchor(at: CLLocationCoordinate2D(latitude: 38.891409, longitude: -77.021400))
+//            self.addGeoAnchor(at: CLLocationCoordinate2D(latitude: 38.891409, longitude: -77.019000))
+//            self.addGeoAnchor(at: CLLocationCoordinate2D(latitude: 38.891409, longitude: -77.015000))
+//            self.addGeoAnchor(at: CLLocationCoordinate2D(latitude: 38.891409, longitude: -77.005000))
+        }
     }
     
     func addGeoAnchor(at worldPosition: SIMD3<Float>) {
@@ -310,7 +333,7 @@ class ViewController: UIViewController, ARSessionDelegate, CLLocationManagerDele
         
         // Update map area
         let camera = MKMapCamera(lookingAtCenter: location.coordinate,
-                                 fromDistance: CLLocationDistance(250),
+                                 fromDistance: CLLocationDistance(1000),
                                  pitch: 0,
                                  heading: mapView.camera.heading)
         mapView.setCamera(camera, animated: false)

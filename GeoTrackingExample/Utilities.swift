@@ -33,7 +33,8 @@ extension Entity {
     static func placemarkEntity(for arAnchor: ARAnchor) -> AnchorEntity {
         let placemarkAnchor = AnchorEntity(anchor: arAnchor)
         
-        let sphereIndicator = testSign() //generateSphereIndicator(radius: 0.1)
+        let sphereIndicator = testSign()
+//        let sphereIndicator = generateSphereIndicator(radius: 0.1)
         
         // Move the indicator up by half its height so that it doesn't intersect with the ground.
 //        let height = sphereIndicator.visualBounds(relativeTo: nil).extents.y
@@ -49,7 +50,7 @@ extension Entity {
     }
     
     static func testSign() -> Entity {
-        return try! ModelEntity.loadModel(named: "test-sign")
+        return try! TestSign.loadScene()
     }
     
     static func generateSphereIndicator(radius: Float) -> Entity {

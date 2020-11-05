@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22DE45BC2536D357003E508F /* test-sign.reality in Resources */ = {isa = PBXBuildFile; fileRef = 22DE45BB2536D356003E508F /* test-sign.reality */; };
+		220AC21A2548D06600ADAC57 /* test-sign.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 220AC2192548D06600ADAC57 /* test-sign.rcproject */; };
 		E110381D24054CD10027DC8A /* GPXExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E110381C24054CD10027DC8A /* GPXExporter.swift */; };
 		E110381F24054D730027DC8A /* GPXParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E110381E24054D720027DC8A /* GPXParser.swift */; };
 		E1103821240552F20027DC8A /* ViewController+LoadSaveAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1103820240552F20027DC8A /* ViewController+LoadSaveAnchors.swift */; };
@@ -25,9 +25,9 @@
 		0095D1F5CE88A3E76098BA28 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0C98B1E08EFB84D67C6C36E6 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		1A0245E08A44E0A40C55F271 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		220AC2192548D06600ADAC57 /* test-sign.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = "test-sign.rcproject"; sourceTree = "<group>"; };
 		22CA04182534DF9200C950B7 /* GeoTrackingExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeoTrackingExample.entitlements; sourceTree = "<group>"; };
 		22CA04192534DFE200C950B7 /* GeoTrackingExampleDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeoTrackingExampleDebug.entitlements; sourceTree = "<group>"; };
-		22DE45BB2536D356003E508F /* test-sign.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = "test-sign.reality"; sourceTree = "<group>"; };
 		E110381C24054CD10027DC8A /* GPXExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXExporter.swift; sourceTree = "<group>"; };
 		E110381E24054D720027DC8A /* GPXParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXParser.swift; sourceTree = "<group>"; };
 		E1103820240552F20027DC8A /* ViewController+LoadSaveAnchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+LoadSaveAnchors.swift"; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		E1F3B1AC2412997E0014F019 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				22DE45BB2536D356003E508F /* test-sign.reality */,
+				220AC2192548D06600ADAC57 /* test-sign.rcproject */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,7 +181,6 @@
 				E166660123F69870001B415F /* LaunchScreen.storyboard in Resources */,
 				E16665FE23F69870001B415F /* Assets.xcassets in Resources */,
 				E16665FC23F6986F001B415F /* Main.storyboard in Resources */,
-				22DE45BC2536D357003E508F /* test-sign.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +197,7 @@
 				E1103821240552F20027DC8A /* ViewController+LoadSaveAnchors.swift in Sources */,
 				E110381F24054D730027DC8A /* GPXParser.swift in Sources */,
 				E182A57923FD8B160052D70C /* Utilities.swift in Sources */,
+				220AC21A2548D06600ADAC57 /* test-sign.rcproject in Sources */,
 				E110381D24054CD10027DC8A /* GPXExporter.swift in Sources */,
 				E16665F523F6986F001B415F /* AppDelegate.swift in Sources */,
 			);
